@@ -1,15 +1,15 @@
 import Race from './Race';
 
-export default class Dwarf extends Race {
+export default class Orc extends Race {
   private static _createdRacesInstances = 0;
-  private _maxLifePoints = 80;
+  private _maxLifePoints = 74;
 
   constructor(name: string, dexterity: number) {
     super(name, dexterity);
-    Dwarf.addDwarf();
+    Orc.addOrc();
   }
 
-  private static addDwarf() {
+  private static addOrc() {
     this._createdRacesInstances += 1;
   }
 
